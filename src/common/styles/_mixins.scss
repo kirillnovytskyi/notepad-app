@@ -1,0 +1,15 @@
+@mixin flexCenter($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin normalizeInput {
+  border: none;
+  outline: none;
+}
+
+@mixin defaultBlockTransition {
+  transition: .3s all;
+}

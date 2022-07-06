@@ -1,0 +1,100 @@
+@import '../../../common/styles/mixins';
+@import '../../../common/styles/variables';
+
+.page-sidebar {
+  @include flexCenter(space-between, flex-start, column);
+  
+  width: 300px;
+  height: 100%;
+  // background-color: #000;
+}
+
+.create-input {
+  @include flexCenter(space-between, center, row);
+  
+  width: 100%;
+}
+
+// .create-input__input-container {
+//   padding: 10px;
+// }
+
+.create-input__text-input {
+  @include normalizeInput();
+
+  padding: 10px 13px;
+  width: 250px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 16px;
+  background-color: $page-block-color;
+  color: $page-primary-text-color;
+}
+
+.create-input__add-button {
+  color: #5E5E5E;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.page-sidebar__notes-container {
+  height: 730px;
+  width: 295px;
+  overflow-y: auto;
+}
+
+.page-sidebar__notes {
+  width: 250px;
+}
+
+.page-sidebar__lack-of-notes-message {
+  color: $page-block-color;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidebar-note {
+  @include defaultBlockTransition();
+
+  height: 70px;
+  border-radius: 14px;
+  background-color: $page-block-color;
+  font-size: 14px;
+  color: $page-primary-text-color;
+  padding: 12px 13px;
+  margin-bottom: 17px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $page-block-color-hover;
+  }
+}
+
+.sidebar-note__shortcut {
+  padding-top: 4px;
+  color: $page-secondary-text-color;
+  font-size: 10px;
+}
+
+.page-slider__clear-button-container {
+  @include flexCenter();
+
+  width: 250px;
+}
+
+.page-slider__clear-button {
+  @include defaultBlockTransition();
+  @include normalizeInput();
+
+  width: 140px;
+  height: 40px;
+  border-radius: 14px;
+  cursor: pointer;
+  background-color: $page-block-color;
+  color: $page-primary-text-color;
+  font-size: 14px;
+
+  &:hover {
+    background-color: $page-block-color-hover;
+  }
+}

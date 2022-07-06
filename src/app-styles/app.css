@@ -1,0 +1,9 @@
+.app {
+  padding: 40px 30px;
+  height: 100vh;
+  background-color: #292929;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}/*# sourceMappingURL=app.css.map */

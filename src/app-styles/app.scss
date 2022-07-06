@@ -1,0 +1,10 @@
+@import '../common/styles/variables';
+@import '../common/styles/mixins';
+
+.app {
+  padding: 40px 30px;
+  height: 100vh;
+  background-color: $page-background-color;
+
+  @include flexCenter(flex-start);
+}

@@ -1,0 +1,20 @@
+.work-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.work-space_empty {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-top: 135px;
+  color: #5E5E5E;
+  font-size: 30px;
+}/*# sourceMappingURL=work-space.css.map */
