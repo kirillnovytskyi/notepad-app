@@ -2,11 +2,12 @@
 @import '../../../common/styles/variables';
 
 .work-space {
-  @include flexCenter(space-between, center, column);
+  @include flexCenter(flex-start, center, column);
 
   width: 100%;
   height: 100%;
 
+  padding-left: 30px;
 }
 
 .work-space_empty {
@@ -17,4 +18,49 @@
   padding-top: 135px;
   color: $page-block-color;
   font-size: 30px;
+}
+
+.work-space__note-title-container {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.work-space__note-title {
+  @include normalizeInput();
+
+  background-color: $page-block-color;
+  font-size: 20px;
+  padding: 13px 26px;
+  width: 100%;
+  border-radius: 15px;
+  color: $page-primary-text-color;
+}
+
+.work-space__note-text-container {
+  width: 100%;
+  height: 85%;
+
+  background-color: $page-block-color;
+  border-radius: 15px;
+  padding: 30px;
+  padding-right: 15px;
+}
+
+.work-space__note-text {
+  @include normalizeInput();
+
+  resize: none;
+  background-color: inherit;
+  font-size: 20px;
+  color: $page-primary-text-color;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: auto;
+  padding-right: 15px;
+}
+
+.work-space__note-text::-webkit-scrollbar-track {
+  background: $page-background-color;
 }

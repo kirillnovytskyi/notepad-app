@@ -1,10 +1,11 @@
 .work-space {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  padding-left: 30px;
 }
 
 .work-space_empty {
@@ -17,4 +18,48 @@
   padding-top: 135px;
   color: #5E5E5E;
   font-size: 30px;
+}
+
+.work-space__note-title-container {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.work-space__note-title {
+  border: none;
+  outline: none;
+  background-color: #5E5E5E;
+  font-size: 20px;
+  padding: 13px 26px;
+  width: 100%;
+  border-radius: 15px;
+  color: #1B1B1B;
+}
+
+.work-space__note-text-container {
+  width: 100%;
+  height: 85%;
+  background-color: #5E5E5E;
+  border-radius: 15px;
+  padding: 30px;
+  padding-right: 15px;
+}
+
+.work-space__note-text {
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: inherit;
+  font-size: 20px;
+  color: #1B1B1B;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: auto;
+  padding-right: 15px;
+}
+
+.work-space__note-text::-webkit-scrollbar-track {
+  background: #292929;
 }/*# sourceMappingURL=work-space.css.map */

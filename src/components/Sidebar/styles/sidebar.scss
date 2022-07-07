@@ -6,6 +6,7 @@
   
   width: 300px;
   height: 100%;
+  padding-top: 5px
   // background-color: #000;
 }
 
@@ -56,6 +57,7 @@
 .sidebar-note {
   @include defaultBlockTransition();
 
+  position: relative;
   height: 70px;
   border-radius: 14px;
   background-color: $page-block-color;
@@ -74,6 +76,22 @@
   padding-top: 4px;
   color: $page-secondary-text-color;
   font-size: 10px;
+}
+
+.sidebar-note__delete-button {
+  @include normalizeInput();
+
+  background-color: inherit;
+  position: absolute;
+  margin-bottom: 30px;
+  top: 15px;
+  right: 15px;
+
+  cursor: pointer;
+
+  &:nth-child(1) {
+    color: #ccc;
+  }
 }
 
 .page-slider__clear-button-container {
