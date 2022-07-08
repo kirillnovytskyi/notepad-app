@@ -1,6 +1,6 @@
 .page-sidebar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   width: 300px;
@@ -14,6 +14,7 @@
   align-items: center;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 31px;
 }
 
 .create-input__text-input {
@@ -38,6 +39,7 @@
   height: 730px;
   width: 295px;
   overflow-y: auto;
+  margin-bottom: 33px;
 }
 
 .page-sidebar__notes {
@@ -80,10 +82,12 @@
   margin-bottom: 30px;
   top: 15px;
   right: 15px;
+  color: #343434;
   cursor: pointer;
 }
-.sidebar-note__delete-button:nth-child(1) {
-  color: #ccc;
+
+.selected-note {
+  background-color: #7B7B7B;
 }
 
 .page-slider__clear-button-container {
@@ -101,10 +105,10 @@
   width: 140px;
   height: 40px;
   border-radius: 14px;
-  cursor: pointer;
   background-color: #5E5E5E;
   color: #1B1B1B;
   font-size: 14px;
+  cursor: pointer;
 }
 .page-slider__clear-button:hover {
   background-color: #7B7B7B;

@@ -38,12 +38,13 @@
 
 .work-space__note-text-container {
   width: 100%;
-  height: 85%;
+  height: 730px;
 
   background-color: $page-block-color;
   border-radius: 15px;
   padding: 30px;
   padding-right: 15px;
+  margin-bottom: 33px
 }
 
 .work-space__note-text {
@@ -63,4 +64,18 @@
 
 .work-space__note-text::-webkit-scrollbar-track {
   background: $page-background-color;
+}
+
+.work-space__controls {
+  width: 100%;
+
+  @include flexCenter(flex-end);
+}
+
+.work-space__button {
+  @include defaultButton();
+}
+
+.work-space__edit-button {
+  margin-left: 20px;
 }
